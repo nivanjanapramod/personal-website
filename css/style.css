@@ -364,6 +364,12 @@ a.abt-btn {
     background: #666;
     color: #ffffff;
 }
+.projects{
+    background: #ccc4c4;
+    background: -webkit-linear-gradient(to right, rgba(103, 103, 245, 0.59), #ccc4c4);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, rgba(103, 103, 245, 0.59), #ccc4c4);
+    color: white;  /* fallback for old browsers */
+}
 .panel-thumbnail p {
     font-size: 17px;
     color: #ddd;
@@ -1119,3 +1125,89 @@ iframe {
        filter: grayscale(100%);
    }
 /*-- //responsive design --*/
+  
+  .card-flip {
+    position: relative;
+    width: 100%;
+    transform-style: preserve-3d;
+    height: auto;
+    transition: all 0.5s ease-out;
+    background: #1e3c72;
+    border: none;
+  }
+  
+  .card-flip div {
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    height: 100%;
+    width: 100%;
+    border: none;
+  }
+  
+  .card-flip .front {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .card-flip .back {
+    position: relative;
+    z-index: 0;
+    transform: rotateY(-180deg);
+  }
+  
+  .card-block .btn-outline-primary {
+    width: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+  }
+  
+  .card {
+    margin: 20px 0;
+
+  }
+  
+  /* Flip Cards CSS */
+  .card-container {
+    perspective: 700px;
+  }
+
+  .card-container a{
+    color: white;
+  }
+  .card-flip {
+    position: relative;
+    width: 100%;
+    transform-style: preserve-3d;
+    height: auto;
+    transition: all 0.5s ease-out;
+    background: #1e3c72;
+    border: none;
+  }
+  
+  .card-flip div {
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    height: 100%;
+    width: 100%;
+    border: none;
+  }
+  
+  .card-flip .front {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .card-flip .back {
+    z-index: 0;
+    transform: rotateY(-180deg);
+    
+  }
+  
+  .card-container:hover .card-flip {
+    transform: rotateY(180deg);
+  }
+   
+  
